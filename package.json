@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build":"rm -rf dist && parcel build index.html --no-minify --public-url ./"
+  },
+  "name": "Shark",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:16211127/-.git",
+  "author": "16211127 <15334629281@163.com>",
+  "license": "MIT"
+}

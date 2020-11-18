@@ -1,0 +1,41 @@
+Arguments: 
+  E:\cmder\nodejs\node.exe E:\cmder\yarn\bin\yarn.js build
+
+PATH: 
+  E:\cmder\cmder\vendor\git-for-windows\mingw64\bin;E:\cmder\cmder\vendor\git-for-windows\usr\bin;C:\Users\xmy\bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;E:\cmder\nodejs;E:\cmder\yarn\bin;C:\Users\xmy\AppData\Local\Microsoft\WindowsApps;E:\vscode\Microsoft VS Code\bin;C:\Users\xmy\AppData\Roaming\npm;C:\Users\xmy\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.18.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\xmy\Desktop\jrg\前端项目导航\package.json: Unexpected token y in JSON at position 281
+      at JSON.parse (<anonymous>)
+      at E:\cmder\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (E:\cmder\yarn\lib\cli.js:310:30)
+      at E:\cmder\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "script": {
+      "build":"rm -rf dist && parcel build index.html --no-minify --public-url ./"
+    },
+    "name": "前端项目导航",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:16211127/-.git",
+    "author": "16211127 <15334629281@163.com>",
+    "license": "MIT"
+  }yar
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
