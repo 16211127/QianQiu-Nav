@@ -1,0 +1,162 @@
+/* css reset */
+*{box-sizing:boder-box;}
+*:before, *:after{box-sizing:boder-box;}
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+input{outline:medium;}
+/* site style */
+body{background-color: #EEEEEE;}
+
+.Global{
+    height: 500px;
+    max-width: 1000px;
+    min-width: 200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: lightcoral solid 1px; */
+}
+
+.GlobalHeader{
+
+    height: 100px;
+    max-width: 1000px;
+    min-width: 100px;
+    margin:0 0 20px 0;
+    display: flex;
+    justify-content: center;
+    /* border: lightcoral solid 1px; */
+}
+.GlobalMain{
+
+    height: 400px;
+    max-width: 1000px;
+    min-width: 100px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: lightcoral solid 1px; */
+}
+ul{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+li{
+    width: 120px;
+    height: 120px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 47px;
+    display: flex;
+    flex-direction:column;
+}
+.SearchBox{
+    background-color: #FFFFFF;
+    max-width: 429px;
+    min-width: 270px;
+    height: 51px;
+    border-radius: 100px;
+}
+#SearchInput{
+    border: 0px;
+    width: 90%;
+    height: 51px;
+    padding: 0 5% 0 5%;
+    border-radius: 100px;
+    font-size: 20px;
+}
+.LabelBox{
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+.close{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.LabelBox:hover > .close {
+    display:block;
+  }
+
+.AddBox{
+    width: 120px;
+    height: 120px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.SiteImage{
+    width: 60px;
+    height: 60px;
+    margin:20px auto 10px auto;
+    font-size: 50px;
+    text-align:center;
+}
+
+.SiteURL{
+    width: 80px;
+    height: 10px;
+    margin:0 20px 0 20px;
+    font-size: 10px;
+    text-align:center;
+}
+
+
+@media (max-width: 500px) {
+    ul{
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    li{
+        width: 80px;
+        height: 80px;
+        background: #FFFFFF;
+        border-radius: 20px;
+        margin-left: 26px;
+        margin-right: 26px;
+        margin-bottom: 19px;
+        display: flex;
+        flex-direction:column;
+    }
+    .LabelBox{
+        width: 80px;
+        height: 80px;
+        position: relative;
+    }
+
+    .AddBox{
+        width: 80px;
+        height: 80px;
+        background: #FFFFFF;
+        border-radius: 20px;
+    }
+    .SiteImage{
+        width: 40px;
+        height: 40px;
+        margin:5px auto 5px auto;
+        font-size: 40px;
+        text-align:center;
+    }
+
+    .SiteURL{
+        width: 60px;
+        height: 10px;
+        margin:10px 10px 0 10px;
+        font-size: 8px;
+        text-align:center;
+    }
+}
