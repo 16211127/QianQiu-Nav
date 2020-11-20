@@ -12,7 +12,6 @@ body{background-color: #EEEEEE;}
     max-width: 1000px;
     min-width: 200px;
     margin: 50px auto;
-    /* border: lightcoral solid 1px; */
 }
 
 .GlobalHeader{
@@ -25,14 +24,9 @@ body{background-color: #EEEEEE;}
     justify-content: center;
 }
 .GlobalMain{
-
     height: 400px;
     max-width: 1000px;
-    min-width: 100px;
-    display: flex;
-    justify-content:space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+    min-width: 100px;;
 }
 ul{
     display: flex;
@@ -108,10 +102,16 @@ li{
 
 
 @media (max-width: 500px) {
+    .Global{
+        height: 500px;
+        max-width: 350px;
+        min-width: 200px;
+        margin: 50px auto;
+    }
     .GlobalMain{
         height: 100px;
-        max-width: 1000px;
-        min-width: 100px;
+        max-width: 350px;
+        min-width: 200px;
     }
     ul{
         display: flex;
