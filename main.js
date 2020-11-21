@@ -6,6 +6,20 @@ const hashMap = xObject || [
   {logo: 'I', url: 'https://www.iconfont.cn/'},
   {logo: 'B', url: 'https://www.bilibili.com'}
 ]
+
+// var getFavicon = function(){
+//   var favicon = undefined;
+//   var nodeList = document.getElementsByTagName("link");
+//   for (var i = 0; i < nodeList.length; i++)
+//   {
+//       if((nodeList[i].getAttribute("rel") == "icon")||(nodeList[i].getAttribute("rel") == "shortcut icon"))
+//       {
+//           favicon = nodeList[i].getAttribute("href");
+//       }
+//   }
+//   return favicon;        
+// }
+
 const simplifyUrl = (url) => {
   return url.replace('https://', '')
     .replace('http://', '')
@@ -16,6 +30,7 @@ const simplifyUrl = (url) => {
 const render = () => {
     $siteList.find('li:not(.last)').remove()
     hashMap.forEach((node, index) => {
+      // console.log(getFavicon(node.url));
       const $li = $(`<li>
         <div class="LabelBox">
           <div class="SiteImage">${node.logo}</div>

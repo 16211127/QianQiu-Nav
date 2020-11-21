@@ -128,7 +128,18 @@ var hashMap = xObject || [{
 }, {
   logo: 'B',
   url: 'https://www.bilibili.com'
-}];
+}]; // var getFavicon = function(){
+//   var favicon = undefined;
+//   var nodeList = document.getElementsByTagName("link");
+//   for (var i = 0; i < nodeList.length; i++)
+//   {
+//       if((nodeList[i].getAttribute("rel") == "icon")||(nodeList[i].getAttribute("rel") == "shortcut icon"))
+//       {
+//           favicon = nodeList[i].getAttribute("href");
+//       }
+//   }
+//   return favicon;        
+// }
 
 var simplifyUrl = function simplifyUrl(url) {
   return url.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, ''); // 删除 / 开头的内容
@@ -137,6 +148,7 @@ var simplifyUrl = function simplifyUrl(url) {
 var render = function render() {
   $siteList.find('li:not(.last)').remove();
   hashMap.forEach(function (node, index) {
+    // console.log(getFavicon(node.url));
     var $li = $("<li>\n        <div class=\"LabelBox\">\n          <div class=\"SiteImage\">".concat(node.logo, "</div>\n          <div class=\"SiteURL\">").concat(simplifyUrl(node.url), "</div>\n          <div class=\"close\">\n          <svg class=\"icon\"> \n            <use xlink:href=\"#icon-guanbi\"></use>\n          </svg>\n          </div>\n        </div>\n        </div>\n      </li>")).insertBefore($lastLi);
     $li.on('click', function () {
       window.open(node.url);
@@ -209,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65304" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59983" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
