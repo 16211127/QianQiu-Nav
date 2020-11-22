@@ -164,11 +164,9 @@ var render = function render() {
 
 render();
 $(".AddBox").on('click', function () {
-  var url = window.prompt('输入要增加的网址');
-
-  if (url.indexOf("http://") !== 0) {
-    url = "http://" + url;
-  }
+  var url = window.prompt('输入要增加的网址'); // if(url.indexOf(`https://`) !== 0){
+  //     url = `https://` + url;
+  // }
 
   console.log(url);
   hashMap.push({
@@ -221,7 +219,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59983" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50081" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
