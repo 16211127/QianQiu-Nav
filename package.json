@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build":"rm -rf dist && parcel build index.html --no-minify --public-url ./"
+    "build": "rm -rf dist && parcel build index.html --no-minify --public-url ./"
   },
   "name": "Shark",
   "version": "1.0.0",

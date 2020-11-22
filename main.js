@@ -58,9 +58,9 @@ const render = () => {
 
 $(`.AddBox`).on('click',()=>{
     let url = window.prompt('输入要增加的网址');
-    if(url.indexOf(`http://`) !== 0){
-        url = `http://` + url;
-    }
+    // if(url.indexOf(`https://`) !== 0){
+    //     url = `https://` + url;
+    // }
     console.log(url);
     hashMap.push({
         logo: simplifyUrl(url)[0].toUpperCase(),
